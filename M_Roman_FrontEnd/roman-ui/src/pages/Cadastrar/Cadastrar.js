@@ -15,7 +15,7 @@ class Cadastrar extends Component{
     }
 
     listaAtualizada = () =>{
-        fetch('http://192.168.7.85:5000/api/categorias')
+        fetch('http://localhost:5000/api/projetos')
             .then(response => response.json())
             .then(data => this.setState({ lista: data}));
     }
@@ -23,7 +23,7 @@ class Cadastrar extends Component{
     adicionaItem = (event) => {
         event.preventDefault();
         console.log(this.state.nome);
-        fetch('http://192.168.7.85:5000/api/categorias',{
+        fetch('http://localhost:5000/api/projetos',{
             method: "POST",
             body: JSON.stringify({ nome: this.state.nome }),
             headers: {

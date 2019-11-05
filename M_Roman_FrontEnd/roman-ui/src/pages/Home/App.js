@@ -14,7 +14,7 @@ export default class Projetos extends Component {
   }
 
   componentDidMount() {
-    Axios.get('http://192.168.7.85:5000/api/Projetos')
+    Axios.get('http://localhost:5000/api/projetos')
       .then(data => {
         this.setState({ lista: data.data });
       })
@@ -27,7 +27,7 @@ export default class Projetos extends Component {
   }
 
   listaAtualizada = () => {
-    fetch('http://192.168.7.85:5000/api/categorias')
+    fetch('http://localhost:5000/api/projetos')
       .then(response => response.json())
       .then(data => this.setState({ lista: data }));
   }
@@ -35,7 +35,7 @@ export default class Projetos extends Component {
   adicionaItem = (event) => {
     event.preventDefault();
     console.log(this.state.nome);
-    fetch('http://192.168.7.85:5000/api/categorias', {
+    fetch('http://localhost:5000/api/projetos', {
       method: "POST",
       body: JSON.stringify({ nome: this.state.nome }),
       headers: {
