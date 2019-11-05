@@ -1,5 +1,6 @@
 ﻿using M_Roman.Domains;
 using M_Roman_WebApi.Domains;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace M_Roman_WebApi.Repositories
         {
             using (RomanContext ctx = new RomanContext())
             {
-                return ctx.Projetos.ToList();
+                return ctx.Projetos.Include(x=> x.IdTemaNavigation).ToList();
             }
 
         }

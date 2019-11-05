@@ -3,18 +3,19 @@ import React, { Component } from 'react';
 import Axios from 'axios';
 
 
-export default class Projetos extends Component {
+class Projetos extends Component {
 
   constructor() {
     super();
     this.state = {
       lista: [],
-      nome: ''
+      nome: '',
+      idTema: ''
     };
   }
 
   componentDidMount() {
-    Axios.get('http://localhost:5000/api/projetos')
+    Axios.get('http://192.168.5.84:5000/api/projetos')
       .then(data => {
         this.setState({ lista: data.data });
       })
@@ -27,7 +28,7 @@ export default class Projetos extends Component {
   }
 
   listaAtualizada = () => {
-    fetch('http://localhost:5000/api/projetos')
+    fetch('http://192.168.5.84:5000/api/projetos')
       .then(response => response.json())
       .then(data => this.setState({ lista: data }));
   }
@@ -35,9 +36,9 @@ export default class Projetos extends Component {
   adicionaItem = (event) => {
     event.preventDefault();
     console.log(this.state.nome);
-    fetch('http://localhost:5000/api/projetos', {
+    fetch('http://192.168.5.84:5000/api/projetos', {
       method: "POST",
-      body: JSON.stringify({ nome: this.state.nome }),
+      body: JSON.stringify({ nome: this.state.nome , idTema: this.state.idTema}),
       headers: {
         "Content-Type": "application/json"
       }
@@ -47,19 +48,16 @@ export default class Projetos extends Component {
 
   }
 
-  adicionaCategoria = () => {
-    let valores_lista = this.state.lista;
-    let categoria = { nome: this.state.nome }
-
-    valores_lista.push(categoria);
-
-    this.setState({ lista: valores_lista });
-  }
-
   atualizarNome = (event) => {
     this.setState({ nome: event.target.value })
     console.log(this.state);
   }
+
+  atualizaTema = (event) => {
+    this.setState({ idTema: event.target.value })
+    console.log(this.state);
+  }
+
 
   render() {
     return (
@@ -87,8 +85,8 @@ export default class Projetos extends Component {
                         type="text"
                         id="input2"
                         placeholder="Id Tema"
-                        value={this.state.nome}
-                        onInput={this.atualizarNome}
+                        value={this.state.idTema}
+                        onChange={this.atualizaTema}
                       />
                       <div>
                         <button
@@ -125,7 +123,7 @@ export default class Projetos extends Component {
                         <tr>
                           <td>{element.idProjeto}</td>
                           <td>{element.nome}</td>
-                          <td>{element.idTemaNavigation.nome}</td>
+                          <td>{element.idTema}</td>
                         </tr>
                       )
                     })
@@ -141,4 +139,4 @@ export default class Projetos extends Component {
   }
 }
 
-// export default Projetos;
+export default Projetos;
