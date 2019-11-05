@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "1bc315f5-ddbc-4399-ac47-680a97c2f875",
+		"name": "Senai.Roman.Manhã",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Professores",
+			"item": [
+				{
+					"name": "Professores.Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\" : \"erik@email.com\",\n\t\"senha\" : \"123123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/Api/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Api",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Projetos",
+			"item": [
+				{
+					"name": "Projetos.Listar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVyaWtAZW1haWwuY29tIiwiY2hhdmUiOiJ2YWxvciIsImp0aSI6IjEiLCJleHAiOjE1NzI4NzkzNDgsImlzcyI6IklubG9jay5XZWJBcGkiLCJhdWQiOiJJbmxvY2suV2ViQXBpIn0.W3YnZIJsYVguvfmU-XZ9LrKzKJ7dIVcTyJspEkeeWzA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/Api/Projetos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Api",
+								"Projetos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Projetos.Cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVyaWtAZW1haWwuY29tIiwiY2hhdmUiOiJ2YWxvciIsImp0aSI6IjEiLCJleHAiOjE1NzI4NzkzNDgsImlzcyI6IklubG9jay5XZWJBcGkiLCJhdWQiOiJJbmxvY2suV2ViQXBpIn0.W3YnZIJsYVguvfmU-XZ9LrKzKJ7dIVcTyJspEkeeWzA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome\": \"Listar Alunos vuc vuc\",\r\n        \"idTema\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/Api/Projetos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Api",
+								"Projetos"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Temas",
+			"item": [
+				{
+					"name": "Temas.Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/Api/Temas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Api",
+								"Temas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Temas.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome\": \"Quadrinhos\",\r\n        \"projetos\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/Api/Temas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Api",
+								"Temas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Temas.Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome\": \"Tirinhas\",\r\n        \"projetos\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/Api/Temas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Api",
+								"Temas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
