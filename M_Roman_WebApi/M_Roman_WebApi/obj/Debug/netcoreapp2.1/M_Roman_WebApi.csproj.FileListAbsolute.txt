@@ -12,3 +12,17 @@ C:\Users\44688951876\Desktop\Segundo_Termo\SENAI-Segundo-termo\Sprint4-Mobile\Ma
 C:\Users\44688951876\Desktop\Segundo_Termo\SENAI-Segundo-termo\Sprint4-Mobile\Manha\Exercicios\Roman\M_Roman_Sprint4\BackEnd\M_Roman_WebApi\M_Roman_WebApi\bin\Debug\netcoreapp2.1\M_Roman_WebApi.pdb
 C:\Users\44688951876\Desktop\Segundo_Termo\SENAI-Segundo-termo\Sprint4-Mobile\Manha\Exercicios\Roman\M_Roman_Sprint4\BackEnd\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.dll
 C:\Users\44688951876\Desktop\Segundo_Termo\SENAI-Segundo-termo\Sprint4-Mobile\Manha\Exercicios\Roman\M_Roman_Sprint4\BackEnd\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.pdb
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\bin\Debug\netcoreapp2.1\M_Roman_WebApi.deps.json
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\bin\Debug\netcoreapp2.1\M_Roman_WebApi.runtimeconfig.json
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\bin\Debug\netcoreapp2.1\M_Roman_WebApi.runtimeconfig.dev.json
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\bin\Debug\netcoreapp2.1\M_Roman_WebApi.dll
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\bin\Debug\netcoreapp2.1\M_Roman_WebApi.pdb
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.csprojAssemblyReference.cache
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.csproj.CoreCompileInputs.cache
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.RazorAssemblyInfo.cache
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.RazorAssemblyInfo.cs
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.AssemblyInfoInputs.cache
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.AssemblyInfo.cs
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.dll
+C:\Users\44366500817\Desktop\M_Roman_Sprint4_DanielMuriloRafael\M_Roman_WebApi\M_Roman_WebApi\obj\Debug\netcoreapp2.1\M_Roman_WebApi.pdb
